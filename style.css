@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@200;300;400;500;700;800;900&family=Kumbh+Sans:wght@400;700&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Poppins:wght@200;400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  bottom: none;
+  outline: none;
+  font-family: "Space Mono", sans-serif;
+}
+body {
+  background: rgb(193, 238, 238);
+}
+.display {
+  margin-top: 10rem;
+  padding: 2rem;
+  width: 100vw;
+  height: 789px;
+  background: rgba(255, 255, 255, 1);
+
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px 25px 0px 0px;
+}
+.bill,
+.select-tip,
+.number-of-people {
+  font-family: "Space Mono", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5rem;
+  color: #5e7a7d;
+}
+.input {
+  display: flex;
+  background: #f3f9fa;
+  border: none;
+  outline: none;
+}
+.input:focus {
+  border: 1px solid rgb(5, 166, 187);
+}
+.bill-input,
+.people-input {
+  border: none;
+  height: 48px;
+  width: 311px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: right;
+  color: #00474b;
+}
+.bill-input::placeholder,
+.people-input::placeholder {
+  background-color: rgb(230, 242, 243);
+}
+
+.bill-input {
+  margin-bottom: 2rem;
+  align-self: flex-end;
+  background: rgba(243, 249, 250, 1) url("/images/icon-dollar.svg") no-repeat
+    1rem 1rem;
+}
+
+button:hover {
+  background: #26c2ae;
+}
+.selected-tip {
+  display: grid;
+  grid-template-columns: 9.2rem 9.2rem;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.1rem;
+  margin-top: 1rem;
+}
+
+.tip {
+  height: 3rem;
+  width: 9.2rem;
+  border-radius: 5px;
+  background: #00474b;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+#custom-tip {
+  height: 3rem;
+  width: 9.2rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: right;
+  padding-right: 1rem;
+  color: #547878;
+}
+.tip:active,
+.tip:hover {
+  background: #26c2ae;
+  color: #00474b;
+
+  cursor: pointer;
+}
+.people-input-container {
+  margin-top: 2rem;
+  display: flex;
+}
+#error {
+  display: none;
+  color: red;
+}
+
+#people-input {
+  margin-top: 2rem;
+
+  background: rgba(243, 249, 250, 1) url("/images/icon-person.svg") no-repeat
+    1rem 1rem;
+  margin: 2rem -10rem;
+}
+.total-display {
+  height: 257px;
+  width: 350px;
+  background: #00474b;
+  border-radius: 15px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  color: #ffffff;
+}
+
+.txt {
+  margin-bottom: 1.5rem;
+}
+.txt p {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #7f9d9f;
+}
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.per-person,
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amount {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  margin-bottom: 1rem;
+  letter-spacing: -0.6px;
+
+  color: #26c2ae;
+}
+.reset {
+  margin-top: 0.5rem;
+  background: #26c2ae;
+  border-radius: 5px;
+  height: 48px;
+  width: 281px;
+
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #00474b;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+@media screen and (min-width: 920px) {
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: raw;
+  }
+  .display {
+    display: flex;
+  }
+
+  .input {
+    width: 25rem;
+    padding: 9px;
+    background-position: 1rem 1rem;
+    margin-right: 10rem;
+  }
+
+  .selected-tip {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+  .tip {
+    height: 48px;
+    width: 117px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
+  }
+  .tip:hover {
+    background: #9fe8df;
+  }
+
+  .people-input-container {
+    margin-top: 3rem;
+  }
+
+  .total-display {
+    height: 25rem;
+    width: 413px;
+
+    border-radius: 15px;
+  }
+  .total-display {
+    position: relative;
+  }
+  .reset {
+    width: 21rem;
+    position: absolute;
+    bottom: 2.5rem;
+  }
+  .reset:hover {
+    background: #9fe8df;
+    cursor: pointer;
+  }
+}
