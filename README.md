@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src='Screenshot.png'/>
+<img src='Screenshot .png'/>
 
 
 
