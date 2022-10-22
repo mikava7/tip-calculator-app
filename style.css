@@ -8,7 +8,7 @@
   font-family: "Space Mono", sans-serif;
 }
 body {
-  background: rgb(193, 238, 238) url(/images/logo.svg) no-repeat 40vw 3rem;
+  background: rgb(193, 238, 238) url(././images/logo.svg) no-repeat 40vw 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,7 @@ body {
 .bill-input {
   margin-bottom: 2rem;
   align-self: flex-end;
-  background: rgba(243, 249, 250, 1) url("/images/icon-dollar.svg") no-repeat
+  background: rgba(243, 249, 250, 1) url("././images/icon-dollar.svg") no-repeat
     1rem 1rem;
 }
 
@@ -110,7 +110,7 @@ body {
 #people-input {
   margin-top: 2rem;
 
-  background: rgba(243, 249, 250, 1) url("/images/icon-person.svg") no-repeat
+  background: rgba(243, 249, 250, 1) url("././images/icon-person.svg") no-repeat
     1rem 1rem;
   margin: 2rem -10rem;
 }
