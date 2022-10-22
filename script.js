@@ -68,6 +68,8 @@ function resetvalues() {
   billInput.value = "0";
   numOfPeople.value = "1";
   customTip.value = "";
+  error.style.display = "none";
+  numOfPeople.style.border = "none";
   billInputValue();
   perPerson.innerHTML = "$" + (0.0).toFixed(2);
   total.innerHTML = "$" + (0.0).toFixed(2);
