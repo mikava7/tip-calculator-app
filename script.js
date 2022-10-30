@@ -9,10 +9,10 @@ const reset = document.getElementById("reset");
 const error = document.getElementById("error");
 
 let bill = "0.0";
-let people = "1";
+let people = "0";
 let tipValue = "0";
 let tipAmount = "0";
-let tipPerPerson = "1";
+let tipPerPerson = "0";
 
 billInput.addEventListener("input", billInputValue);
 
